@@ -1,0 +1,87 @@
+body {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    rgba(14, 17, 46, 1) 0%,
+    rgba(2, 2, 36, 1) 50%,
+    rgba(4, 2, 23, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    rgba(14, 17, 46, 1) 0%,
+    rgba(2, 2, 36, 1) 50%,
+    rgba(4, 2, 23, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    rgba(14, 17, 46, 1) 0%,
+    rgba(2, 2, 36, 1) 50%,
+    rgba(4, 2, 23, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    rgba(14, 17, 46, 1) 0%,
+    rgba(2, 2, 36, 1) 50%,
+    rgba(4, 2, 23, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(14, 17, 46, 1) 0%,
+    rgba(2, 2, 36, 1) 50%,
+    rgba(4, 2, 23, 1) 100%
+  );
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* align-items: center; */
+}
+.center {
+  text-align: center;
+}
+.center img {
+  width: 350px;
+  height: 350px;
+  margin: 50px 0 10px;
+}
+.center h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.center input {
+  font-size: 18px;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+}
+#start {
+  outline: none;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: brown;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+/* .container .center {
+  transform: translateY(-50%);
+} */
