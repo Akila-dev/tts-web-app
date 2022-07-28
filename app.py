@@ -19,6 +19,9 @@ def start():
     sleep(1)
     objective(objQuestion)
     return render_template("index.html")
+
+if __name__ == "app":
+    app.run(debug=False, host='0.0.0.0')
     
 
 # @app.route("/app")
