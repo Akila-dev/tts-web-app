@@ -4,7 +4,7 @@ import speech_recognition as sr
 import pyttsx3
 from time import sleep
 
-from waitress import serve
+# from waitress import serve
 
 app = Flask(__name__)
 # app.config['DEBUG'] = True
@@ -109,6 +109,6 @@ objQuestion = "He is the president"
 # SPEECH RECOGNITION END
 
 
-# if __name__ == "app":
-#     app.run(debug=False, host='0.0.0.0')
-serve(app, host="0.0.0.0", port=8080, threads=1)
+if __name__ == "app":
+    app.run(debug=False, host='0.0.0.0')
+# serve(app, host="0.0.0.0", port=8080, threads=1)
