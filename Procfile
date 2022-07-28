@@ -1,1 +1,1 @@
-web: gunicorn tts:app
+web: gunicorn app:app
