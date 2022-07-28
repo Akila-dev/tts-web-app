@@ -4,6 +4,8 @@ import speech_recognition as sr
 import pyttsx3
 from time import sleep
 
+# from waitress import serve
+
 app = Flask(__name__)
 # app.config['DEBUG'] = True
 app.secret_key = "manwolfdragon_1234509876"
@@ -20,8 +22,6 @@ def start():
     objective(objQuestion)
     return render_template("index.html")
 
-if __name__ == "app":
-    app.run(debug=False, host='0.0.0.0')
     
 
 # @app.route("/app")
@@ -107,3 +107,8 @@ objQuestion = "He is the president"
 
 # objective(objQuestion)
 # SPEECH RECOGNITION END
+
+
+if __name__ == "app":
+    app.run(debug=False, host='0.0.0.0', port=5000)
+# serve(app, host="0.0.0.0", port=8080, threads=1)
