@@ -110,5 +110,5 @@ objQuestion = "He is the president"
 
 
 if __name__ == "app":
-    app.run(debug=False, host='0.0.0.0')
+    app.run()
 # serve(app, host="0.0.0.0", port=8080, threads=1)
