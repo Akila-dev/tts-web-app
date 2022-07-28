@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TTS APP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css')}}"
+    /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <img src="{{url_for('static', filename='ai.png')}}" alt="logo" />
+        <form action="start">
+          {% for question in get_flashed_messages() %}
+          <h1 class="objquestion">{{ question }}</h1>
+          {% endfor %}
+          <!-- <input type="text" name="sentence" id="sentence" /> -->
+          <input type="submit" value="START" id="start" />
+        </form>
+        <!-- {% for question in get_flashed_messages() %}
+        <h1 class="objquestion">{{ question }}</h1>
+        <button>Start</button>
+        {% endfor %} -->
+      </div>
+    </div>
+    <script src="" async defer></script>
+  </body>
+</html>
